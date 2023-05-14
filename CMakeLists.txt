@@ -1,0 +1,5 @@
+add_library(picolog INTERFACE)
+target_sources(picolog INTERFACE ${CMAKE_CURRENT_LIST_DIR}/src/picolog.c)
+target_include_directories(picolog INTERFACE ${CMAKE_CURRENT_LIST_DIR}/src/)
+target_link_libraries(picolog INTERFACE pico_stdlib)
+message("picolog interface library available.")
